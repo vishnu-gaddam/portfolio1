@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PORTFOLIO</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+
+/*--------------------------------------------------------HOME------------------------------------------------------------------*/        
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(167, 231, 108,0.9);
+    color:black;
+}
+
+.container{
+    padding: 10px 10px;
+}
+
+nav{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+     display: inline-block;
+     margin: 10px 20px;
+     font-size: 20px;
+     font-family:Arial, Helvetica, sans-serif ;
+}
+nav ul li a{color:black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+     position: relative;
+}
+
+
+nav ul li a:hover{text-decoration:underline;
+    color:rgb(255, 7, 7);
+ }
+
+
+.container p img{width: 80px;height: 80px;border-radius: 50px;margin-top:30px;margin-left: 1opx;}
+
+#name::first-letter{font-size: 100px;font-weight: bold;}
+#name::first-line{font-size: 70px;font-weight: bold;}
+#name{font-family:'Times New Roman', Times, serif;letter-spacing: 5px;text-shadow: 1px 1px red;}
+
+#hi{margin-top: 50px;
+    font-size:60px;
+    color: rgb(135,137,220);
+}
+#intro{margin-top: 10px;
+    font-size: 60px;
+    color: rgb(135,137,220);
+}
+
+#intro span{color:rgb(135,137,220)}
+
+#image{position: absolute;
+       left: 0px;
+       top: 150px;
+        z-index: -1;
+        width: 100%;
+        height: 500px;
+        border-radius: 2px;
+    }
+
+
+#text{color: rgb(215, 28, 62);font-size: 20px;}
+
+/*-----------------------------------------------------------ABOUT ME----------------------------------------------------*/
+
+#about{padding: 200px 0;margin-top: 20px;}
+
+.row{display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{flex-basis: 35%;}
+
+.about-col-1 img{width: 530px;
+                height: 570px;
+                 border-radius: 20px;
+                 padding-left: 10px;
+                }
+
+.about-col-2{flex-basis: 60%;}
+
+.sub-title{font-size: 50px;
+            font-weight: 600;
+            font-family: Tahoma, sans-serif;
+            color:rgb(243, 14, 14)
+      
+}
+
+#about-me{font-size: 24px;
+         font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         padding-top: 30px;
+         list-style-type:disc;
+ }
+
+
+/*------------------------------------------SKILLS----------------------------------------------*/
+
+.sub-title-skill{color: rgb(255, 0, 0);
+                 margin-top: -100px;
+                 padding-top: 30px;
+                 padding-bottom: 30px;
+                 font-size: 50px;
+                 text-align: center;
+                 font-family:  sans-serif;
+                 font-weight:bold;
+                 }
+
+
+ .skills-list{padding: 0 30px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr ));
+    grid-gap:35px 80px;
+    font-family: sans-serif;
+    font-size: large;
+
+ }
+
+ #skills{background-color:palegreen;padding-bottom: 40px;margin-bottom: 60px;}
+
+ h2{padding: 10px 0;}
+
+.border-1,.border-2{border-style: solid;
+      height:  160px;
+      border-radius: 10px;
+      padding : 10px 10px;
+    
+    }
+
+.border-1:hover{background-color:rgb(242, 202, 0);transform: translateY(-15px);}    
+.border-2:hover{background-color: rgb(242, 202, 0);transform: translateY(15px);}
+
+
+/*--------------------------------------------------------PROJECTS-------------------------------------------------------*/  
+
+#projects{margin:0;
+          padding: 0 20px;
+          padding-bottom: 30px;
+          
+        }
+
+
+.title-project{color: rgb(255, 0, 0);
+                 margin-top: 0px;
+                 padding-bottom: 30px;
+                 font-size: 50px;
+                 text-align: center;
+                 font-family: sans-serif;
+                 font-weight:bold;
+                 }
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:50px 20px;
+    font-family:serif;
+
+}
+
+.border{  
+    border-radius: 15px;
+    position: relative;
+    overflow:none;
+}
+
+.border img{width: 260px; 
+            height: 300px;
+            border-style: solid;
+            border-radius:15px;
+            transition:transform 0.5s;
+            
+    }
+
+
+.border h1{padding-top: 10px;font-size: x-large;}
+
+
+.border:hover{transform: translateY(-10px);}
+
+.layer{width: 259px;
+        height: 0;
+        background: linear-gradient(rgba(4, 213, 29, 0.9),#3705d0);
+        border-radius: 15px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        margin-bottom: 6px;
+        font-size: 20px;
+        transition:height 0.5s;
+
+}
+
+
+.layer h1{padding: 20px;}
+
+.layer a{margin-top: 20px;
+         color:red;
+         text-decoration: none;
+         font-size: 18px;
+         line-height: 60px;
+         background: white;
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+
+}
+
+.border:hover img{transform: scale(1.1)}
+
+.border:hover .layer{height: 100%;}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border:1px solid red;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:rgb(1, 1, 12);
+    background-color: rgb(161, 204, 228);
+    font-size: 20px;
+    font-weight: bold;
+    transition: background 0.5s;
+}
+
+.btn:hover{background:red;
+           box-shadow: 2px 2px black;
+           transform:translateY(-5px) ;
+}
+
+
+/*------------------------------------------EDUCATION-----------------------------------------------------*/
+
+#education{background-color: rgb(142, 251, 153);}
+
+.title-education{
+                color: red;
+                padding-top:30px;
+                 padding-bottom: 30px;
+                 font-size: 50px;
+                 text-align: center;
+                 font-family: sans-serif;
+                 font-weight:bold;
+                 
+}
+
+
+.education .box-container{display: flex;
+           align-items: center;
+           justify-content: space-between;
+           flex-wrap: wrap;
+           padding: 1rem 0;
+           padding-left: 0;
+           padding-right: 1rem;
+
+}
+.education .box-container .box{width: 27rem;
+                margin: 1rem 1rem;
+                padding-left: 1rem;
+                border-left: .2rem soliid rgb(222, 13, 13);
+                position:relative;    
+}
+
+.education .box-container .box span{font-size: 1.3rem; 
+                     background: gray;
+                    color: whitesmoke;
+                    border-radius: 5rem;
+                    padding:.3rem 2.5rem;
+                    }
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: rgb(4, 98, 238);
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color: rgb(24, 7, 7);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+             position: absolute;
+             top: -1.5rem; left: -2.5rem;
+             height: 5rem;
+             width: 5rem;
+             border-radius: 50%;
+             line-height: 5rem;
+             text-align: center;
+             font-size: 2rem;
+             color: aliceblue;
+
+}
+
+.education h1{padding-left: 30px;}
+
+
+/*--------------------------------------------CONTACT---------------------------------------------------------------------*/
+
+#contact{margin-top:  60px;
+         background-coor: rgb(251, 249, 237);
+         }
+
+.contact-left{flex-basis: 35%;}          
+
+.contact-right{flex-basis: 60%; margin-right: 15px;}
+
+.contact-left h1{padding-left: 20px;
+                 padding-bottom: 30px;
+                 color: rgb(233, 6, 6);
+                 font-family: sans-serif;
+                 font-size: 50px;
+                 padding-top: 30px;
+                 
+}
+
+.contact-left p{padding-bottom: 25px;
+                padding-left: 20px;
+                font-size: 20px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;        
+                
+}
+
+
+.contact-left p i{margin-right: 15px;
+                  color: black;
+                  font-size: 25px;
+}
+
+.social-icons{margin-top: 20px;}
+
+.social-icons a{
+                padding-left: 25px;
+                padding-top: 30px;
+                font-size: 25px;
+                color: black;
+                position: relative;
+                
+}
+
+.social-icons a :hover{color: rgb(255, 3, 3);
+                      transform: translateY(-5px);  
+                                       
+    }
+
+.btn1{background-color:rgb(255, 94, 0); 
+      padding: 10px 20px;
+      font-size: large; 
+      border-radius: 5px;
+    } 
+
+.btn1:hover{background-color: rgb(255, 0, 0);
+            box-shadow: 2px 2px black;
+            transform:translateY(-5px) ;
+            cursor: pointer;
+}
+
+.contact-right{padding-top: 100px;}
+
+.contact-right form{width: 100%}
+
+form input,textarea{width: 100%;
+                     padding:10px;
+                     margin-bottom: 15px;
+                     border-radius: 6px;
+                     border-style: none;
+                     font-size: 18px;
+                     background: rgba(155, 244, 155,0.9);
+                     color: rgb(0, 11, 21);
+                     
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #262626;
+    font-size:xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin-top: 4rem;
+}
+
+
+/*---------------------------------------------CSS FOR SMALL SCREENS-------------------------------------------------*/
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url("C:\Users\gadda\OneDrive\Pictures\backimage.jpg");
+    }
+}
+    
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <!---------------------------------------------HOME-------------------------------------------------------------->
+
+<div id="header">
+    <div class="container">
+        <nav id="bar">
+            <p id="name"><img src="https://cdn.dribbble.com/users/6023394/screenshots/16368989/mbb_4x.png"><span>VISHNU</span></p>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#contact">CONTACT   </a></li>
+            </ul>
+        
+        </nav>
+
+        <div class="container">
+            <h1 id="hi">Hi,</h1>
+            <h1 id="intro">I'm <span>Vishnu Sai Reddy Gaddam</span><br>Web Developer.</h1>
+            <img src="C:\Users\gadda\OneDrive\Pictures\backimage.jpg" id="image"><br>
+            <p id="text"> An aspiring B.Tech student deeply engaged in tech exploration, adapt in web development and software development.<br><br> I blend creativity with technical skills to drive innovative solutions and eagerly embrace continuous growth in the ever-evolving tech sphere.</p>
+            
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------ABOUT----------------------------------------------------->
+
+
+<div id="about">
+    <div class="container">
+        <div class="row"> 
+            <div class="about-col-1">
+                <img src="C:\Users\gadda\OneDrive\Pictures\VISHNU-min.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <div>
+                    <ul>
+                        <li id="about-me">Hey, I'm Vishnu, a dedicated web designer passionate about creating impactful online experiences.</li>
+                        <li id="about-me">A passionate Full Stack Web Developer having an experience of buliding Web Application with HTML5/CSS/JavaScript/ReactJs/NodeJs and other cool libaries and Frameworks.</li>
+                        <li id="about-me">Develop highly interactive Front end/user interface for web Application.</li>
+                        <li id="about-me">I specialize in bringing creativity to every project.</li>
+                        <li id="about-me">My approach revolves around,Understanding client goals,Adopting modern design trends,Constantly learning and evolving.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-------------------------------------------------SKILLS-------------------------------------------------------------->
+
+<div id="skills">
+    <div class="conatiner">
+            <h1 class="sub-title-skill">SKILLS</h1>
+            <div class="skills-list">
+                <div class="border-1">
+                    <i class="fa-brands fa-html5 fa-xl"></i>
+                    <h2>HTML</h2>
+                    <p>Proficient in creating semantic and accessible HTML structures.</p>
+                </div>
+                <div class="border-2">
+                    <i class="fa-brands fa-css3 fa-lg"></i>
+                    <h2>CSS</h2>
+                    <p>Skilled in crafting visually appealing and responsive designs with CSS.</p>
+                </div>
+                <div class="border-1">
+                    <i class="fa-brands fa-bootstrap fa-lg"></i>
+                    <h2>Bootstrap</h2>
+                    <p>Experience in utilizing Bootstrap for responsive web development.</p>
+                </div>
+                <div class="border-2">
+                    <i class="fa-brands fa-js fa-lg"></i>
+                    <h2>JavaScript</h2>
+                    <p>Knowledgeable in implementing interactive features using JavaScript.</p>
+                </div>
+                <div class="border-1">
+                    <i class="fa-brands fa-python fa-lg"></i>
+                    <h2>Python</h2>
+                    <p>Proficient in Python programming language for various applications.</p>
+                </div>
+                <div class="border-2">
+                    <i class="fa-solid fa-c fa-lg"></i>
+                    <h2>C</h2>
+                    <p>Proficiency in programming using the C language.</p>
+                </div>
+                <div class="border-1">
+                    <i class="fa-solid fa-o fa-lg"></i>
+                    <h2>C++</h2>
+                    <p>Knowledge and experience in C++ programming.</p>
+                </div>
+                <div class="border-2">
+                    <i class="fa-brands fa-github fa-lg"></i>
+                    <h2>Development Skills</h2>
+                    <p>API(Application Programming Interface)Integration, Deployment/Hosting.</p>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!------------------------------------------------------PROJECTS------------------------------------------------------------------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="title-project">PROJECTS</h1>
+        <div class="projects-list">
+            <div class="border">
+                <img src="https://media.istockphoto.com/id/1389425030/vector/desk-electric-fan-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=F8sr9oDbjO40LtlSaMXNAZ0921YEDAG-H30AXpYBEeM=">
+                <div class="layer">
+                <h1>FAN</h1>
+                <P>It is about to ensure functionality to control fan speed.</P>
+                <a href="C:\Users\gadda\OneDrive\Desktop\HTML ON FRAMES\fan.html"><i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="border">
+                <img src="https://logo-sign.com/logos/wikipedia-logo.jpg">
+                <div class="layer">
+                <h1>WIKIPEDIA</h1>
+                <p>Creating a Wikipedia page involues researching and compliling reliable information on the subject.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="border">
+                <img src="https://media.istockphoto.com/id/531633071/vector/calculator.jpg?s=612x612&w=0&k=20&c=TrSndAw_fs5LVFqagmF16aqpKb7ZYzyMZ7bVL3QVyP8=">
+                <div class="layer">
+                <h1>CALCULATOR</h1>
+                <p>To create a user-friendly application that performs basic Arithmetic Operation.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="border">
+                <img src="https://media.istockphoto.com/id/942234932/vector/mobile-phone-template-for-music-cover.jpg?s=612x612&w=0&k=20&c=KRigoy1G7z1aFf_RbftmS_TEv1r2M209L69gXKfwrMo=">
+                <div class="layer">
+                <h1>MUSIC</h1>
+                <p>Explore Most Popular and Trending Songs.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="border">
+                <img src="https://img.freepik.com/premium-photo/futuristic-neon-electric-car-is-being-charged-from-power-plant-electric-vehicle-3d-illustration_717906-1326.jpg">
+                <div class="layer">
+                <h1>CAR WEB</h1>
+                <p>Includes section of car models,specifications,integrate responsive design and features</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!---------------------------------------------EDUCATION--------------------------------------------------------------------->
+
+
+<div id="education">
+    <div class="conatiner">
+        <h1 class="title-education">EDUCATION</h1>
+        <div class="education">
+                <h1>My <span> Education : </span></h1>
+            <div class="box-container">    
+                <div class="box">
+                    <i class="fa-solid fa-graduation-cap fa-lg"></i>
+                    <span>2020</span>
+                    <h3>Secondary School Education</h3>
+                    <p>I had completed my schooling from Oxford School in the year 2020.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-graduation-cap fa-lg"></i>
+                    <span>2022</span>
+                    <h3>Higher Secondary Education</h3>
+                    <p>I had completed my higher secondary education(Intermediate) from Oxford Junior College in the year 2022.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-graduation-cap fa-lg"></i>
+                    <span>2026</span>
+                    <h3>Under Graduation</h3>
+                    <p>I had completed my B.tech[Computer Science and Engineering] from Sagi Rama Krishnam Raju Engineering College in the year 2026.</p>
+                </div>
+            </div>    
+        </div>    
+    </div>
+</div>
+
+
+<!----------------------------------------  CONTACT------------------------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT</h1>
+                <p><i class="fa-solid fa-m fa-lg"></i>&nbsp;&nbsp;  gaddamvishnusaireddy@gmail.com</p>
+                <p><i class="fa-solid fa-phone fa-lg"></i>&nbsp;&nbsp;   9515983433</p>
+                <div class="social-icons">
+                <a href="https://www.instagram.com/_mr_rolex_sir_3?igsh=ZjY2b2Z4cHozbWtk"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100084381616000&mibextid=JRoKGi"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="https://x.com/vishnu_gaddam_?t=We7GYp6jo328KhqZ9KYAng&s=09"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required><br>
+                    <input type="email" name="E-mail" placeholder="Your E-mail" required><br>
+                    <textarea name="Message" rows="5"  placeholder="Your Message"></textarea><br>
+                    <button class="btn1">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright fa-lg"></i>Copyright @Vishnu</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
